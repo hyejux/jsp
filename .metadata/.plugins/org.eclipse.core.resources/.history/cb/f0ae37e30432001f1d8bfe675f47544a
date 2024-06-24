@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+ font-size : 30px;
+ position : absolute;
+ top : 50px;
+ left : 250px
+ text-decoration : none;
+ }
+</style>
+</head>
+<body>
+	<img src="img/pan.jpg" width="200" heigth="200" />
+	<div> <a href="hello1.html"> .。 ( 눌러 보세여 )</a> </div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ a {
+ font-size : 30px;}
+</style>
+</head>
+<body>
+	<img src="img/pan.jpg" width="200" heigth="200" />
+	<a href="hello1.html"> .... ....... </a>
+	
+	
+</body>
+</html>
