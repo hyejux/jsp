@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <th>
+                이름
+            </th>
+            <th>
+                나이
+            </th>
+            <th>
+                성별
+            </th>
+            <th rowspan="4"> 비고 </th>
+
+        </tr>
+        <tr>
+            <td>히히1</td>
+            <td>111</td>
+            <td>ㅁㅁ</td>
+        </tr>
+        
+        <tr>
+            <td> 히히2</td>
+            <td>111</td>
+            <td>ㅎㅎ</td>
+        </tr>
+        <tr>
+            <td colspan="3">ㅎㅎ</td>
+        </tr>
+
+
+
+    </table>
+    
+</body>
+</html>

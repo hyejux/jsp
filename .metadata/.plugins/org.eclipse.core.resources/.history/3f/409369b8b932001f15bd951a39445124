@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+
+String nick = request.getParameter("nick");
+String hobby = request.getParameter("hobby");
+String region = request.getParameter("region");
+String submit = request.getParameter("submit");
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+div {
+height: 50px;
+width : 100px;
+border: 1px solid blue;
+text-align : center;
+}
+
+</style>
+
+</head>
+<body>
+	<h3> 서버로 넘어가 ~</h3>
+	
+	<div> <%= nick %> </div>
+	 <div> <%= hobby %> </div>
+	 <div><%= region %> </div>
+	 <div> <%= submit %></div>
+	
+	
+</body>
+</html>

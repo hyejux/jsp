@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+        
+<%@ page import="java.util.Arrays" %>
+
+<%
+
+	String id  = request.getParameter("id");
+	String pw = request.getParameter("pw");
+	String[] hobby = request.getParameterValues("hobby");
+	String major = request.getParameter("major");
+	String region = request.getParameter("region");
+	String date = request.getParameter("hire_date");
+	String intro = request.getParameter("intro");
+
+%>
+    
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <h3> 마이페이지 </h3>
+   <ul>
+        <li> 아이디 : <%= id %> </li>
+        <li> 비밀번호 : <%= pw %></li>
+        <li> 취미 :<%= Arrays.toString(hobby) %>  </li>
+        <li> 전공 :  <%= major %> </li>
+        <li> 사는 곳 :  <%= region %> </li>
+        <li> 입사 일 :  <%= date %> </li>
+        <li> 자기소개 : <%= intro %>  </li>
+
+   </ul> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+* {
+	font-size: 20px;
+}
+
+input {
+	margin: 5px;
+}
+
+#btn1 {
+	height: 30px;
+	width: 150px;
+	font-weight: 300px;
+	background-color: rgb(186, 223, 255);
+	border: 1px solid rgb(97, 97, 176);
+	border-radius: 10px;
+}
+#btn2 {
+	height: 30px;
+	width: 150px;
+	font-weight: 300px;
+	background-color: rgb(255, 211, 211);
+	border: 1px solid rgb(191, 102, 170);
+	border-radius: 10px;
+}
+span {
+
+}
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+		<form action="./request/ok.jsp" method="post">
+	
+
+		<span> 닉 네 임 : </span> <input type="text" name="id"> <br>
+		<span> 비밀번호 : </span> <input type="password" name="pw"> <br>
+		
+		 
+		<span> 취미 : </span>
+
+		<input type="checkbox" value="코딩하기" name="hobby"> 코딩하기
+		<input type="checkbox" value="춤추기" name="hobby"> 춤추기
+		<input type="checkbox" value="음악듣기" name="hobby"> 음악듣기
+		<input type="checkbox" value="집에가기" name="hobby"> 집에가기
+		<input type="checkbox" value="기절하기" name="hobby"> 기절하기
+			
+		<br>
+		
+
+		<span> 전공분야 : </span>
+		
+		<input type="radio" value="경영학과" name="major"> 경영학과
+		<input type="radio" value="컴퓨터공학과" name="major"> 컴퓨터공학과
+		<input type="radio" value="간호학과" name="major"> 간호학과
+		<input type="radio" value="물리학과" name="major"> 물리학과
+		<input type="radio" value="미디어학과" name="major"> 미디어학과
+			
+		<br>
+
+		사는 곳 : 
+		<select name="region">
+		
+			<option value="서울시"> 서울시 </option>
+			<option value="경기도"> 경기도 </option>
+			<option value="인천시"> 인천시 </option>
+			<option value="광양시"> 광양시 </option>
+			
+		</select>
+		
+		<br>
+		
+		입사일 :
+		
+		<input type="date" name="hire_date">
+
+		<br>
+		지역 :
+		<select name="region">
+			<option value="서울시"> 서울시 </option>
+			<option value="경기도"> 경기도 </option>
+			<option value="인천시"> 인천시 </option>
+			<option value="광양시"> 광양시 </option>
+		</select>
+
+
+
+		<br><br>
+
+		자기소개
+		<br>
+		<textarea cols="30" rows="5" name="intro"> </textarea>
+
+		<br><br>
+		<input id="btn1" type="submit" value="전송" name="submit">
+		<input id="btn2" type="reset" value="다시작성하기" name="reset">
+
+
+			
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.Arrays" %>
+
+<%
+
+	String nm  = request.getParameter("nm");
+	double tall  = Double.valueOf(request.getParameter("tall"));
+	double weight  =  Double.valueOf(request.getParameter("weight"));
+	
+	
+	double result = weight / (tall/100 * tall/100);
+	
+	
+
+%>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%= result %>
+	
+	 <% if (result >= 25){
+	  	System.out.println("과체중 입니다 ㅠㅠ ");
+	 }else if (result <= 18){
+		 System.out.println("저체중 입니다 ㅠㅠ ");
+	 } %>
+	 
+	
+</body>
+</html>
