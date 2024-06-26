@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <%
+    
+    String user_id = (String) session.getAttribute("user_id");
+    String user_nick = (String) session.getAttribute("user_nick");
+    
+    %>
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+a {
+border : 2px solid blue;
+color : blue;
+border-radius: 3px;
+margin: 5px;
+}
+#frame {
+border: 2px solid grey;
+width: 300px; 
+height: 150px;
+border-radius: 3px;
+
+}
+
+#header{
+
+text-align : center;
+padding : 30px;
+font-size : 25px;
+
+
+}
+
+#btn{
+text-align : center;
+
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div id="frame">
+<div id="header"> <%= user_id %> ( <%= user_nick %> ) 님 환영합니다 ~!</div>
+<div id="btn"> <a href="session_ex01.jsp" onclick="alert('로그아웃되었습니다')"> 로그아웃 </a>
+</div>
+</div>
+
+
+</body>
+</html>

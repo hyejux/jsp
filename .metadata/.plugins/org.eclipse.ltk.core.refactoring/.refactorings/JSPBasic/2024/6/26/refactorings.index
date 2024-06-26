@@ -4,3 +4,14 @@
 1719216567971	Move 'img' to 'html'
 1719279380414	Delete element
 1719293972863	Delete element
+1719364416873	Move 'path_quiz.jsp' to 'ex'
+1719366297939	Rename resource 'cookie_ex_01.jsp'
+1719372313689	Rename resource 'session_get'
+1719384459388	Move 'get404.jsp' to 'error_view'
+1719384461369	Move 'get500.jsp' to 'error_view'
+1719384463642	Move 'error_view.jsp' to 'error_view'
+1719384466571	Move 'app_basic.jsp' to 'apllication'
+1719384729932	Delete element
+1719384737554	Rename resource 'get404.jsp'
+1719384787463	Move 'error_view' to 'webapp'
+1719384789599	Move 'apllication' to 'webapp'
