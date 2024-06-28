@@ -46,7 +46,7 @@ import java.io.IOException;
 		
 		//자바에서 forward 문법을 사용하는 방법
 		RequestDispatcher dp = request.getRequestDispatcher("/actionTag/forward_ex04.jsp");//이동할 url 주소
-		dp.forward(request, response);)
+		dp.forward(request, response);
 	}
 
 }
