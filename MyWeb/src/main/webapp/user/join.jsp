@@ -9,7 +9,7 @@
     	
     	<h3> 노름은 파도고, 프로그램은 data flow당 </h3>
     	<hr/>
-    	<form action="joinForm.user" method="get">
+    	<form action="joinForm.user" method="post">
     	
     		<table>
     			<tr>
@@ -51,7 +51,7 @@
     		<br/>
     		
     		<input type="submit" value="가입">
-    		<input type="button" value="로그인" onclick="location.href='login.user'; ">
+    		<input type="button" value="로그인" onclick="location.href='login.user';">
     		
     	
     	

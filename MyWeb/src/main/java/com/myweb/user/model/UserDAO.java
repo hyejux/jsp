@@ -60,7 +60,7 @@ public class UserDAO {
 		   
 		   
 		   if(rs.next()) { // 유저가 있다는 뜻
-			   result = 1;
+			   result = rs.getInt(1);
 		   }
 		   
 		   
@@ -68,7 +68,7 @@ public class UserDAO {
 		  e.printStackTrace();
 		  
 	   }finally {
-		   
+		   JdbcUtil.close(conn, pstmt, null);
 	   }
  
 	  
@@ -82,6 +82,7 @@ public class UserDAO {
 	   
 	   Connection conn = null;
 	   PreparedStatement pstmt = null;
+	   
 	   
 	   try {
 		   conn = ds.getConnection();
@@ -108,7 +109,7 @@ public class UserDAO {
    
  public UserDTO login(String id, String pw) {
 	 String sql ="SELECT * FROM USERS WHERE ID = ? AND PW =? ";
-	 	UserDTO dto = null;
+	 UserDTO dto = null;
 	  Connection conn = null;
 	   PreparedStatement pstmt = null;
 	   ResultSet rs = null;
@@ -121,12 +122,12 @@ public class UserDAO {
 		   pstmt.setString(2, pw);
 		   
 		   rs = pstmt.executeQuery();
-		   
+		   System.out.println(id);
 		   if (rs.next()) {
 			   String name = rs.getString("name");
-			   String email = rs.getString("email");
+			   String email = rs.getString("eamil");
 			   String gender = rs.getString("gender");
-			   
+			   System.out.println(name+email+gender);
 			   dto = new UserDTO(id,null,name,email,gender,null);
 			   
 		   }
@@ -143,6 +144,29 @@ public class UserDAO {
 	 
  }
    
-   
+	 
+	public void delete(String id, String pw) {
+		 String sql ="delete from users where pw = ? ";
+		 
+		 	Connection conn = null;
+		   PreparedStatement pstmt = null;
+		   
+		   
+		   try {
+			   conn = ds.getConnection();
+			   pstmt = conn.prepareStatement(sql);
+			   pstmt.setString(1, pw);
+			   
+			   pstmt.executeQuery(); // 끗~
+			
+			   
+		   }catch (Exception e ) {
+			  e.printStackTrace();
+			  
+		   }finally {
+			   JdbcUtil.close(conn, pstmt, null);
+		   }
+
+	}
    
 }

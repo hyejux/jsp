@@ -16,6 +16,9 @@
 	<%-- <%=request.getContextPath() --%>
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/css/business-casual.css" rel="stylesheet">
+    
+       
+       
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -69,7 +72,7 @@
                         <a href="${pageContext.request.contextPath }/member/member.jsp">Member</a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath }">BOARD</a>
+                        <a href="${pageContext.request.contextPath}/board/list.board"> BOARD </a>
                     </li>
                     <li>
                         <a href="${pageContext.request.contextPath }/user/login.jsp">LOGIN</a>

@@ -57,6 +57,13 @@ public class UserController extends HttpServlet {
 			service.login(request, response);
 		}else if (command.equals("/user/mypage.user")) {
 			request.getRequestDispatcher("mypage.jsp").forward(request,response);
+		}else if (command.equals("/user/delete.user")) {
+			request.getRequestDispatcher("delete.jsp").forward(request,response);
+		}else if (command.equals("/user/deleteForm.user")) {
+		
+			service = new UserServicepl();
+			service.delete(request, response);
+		
 		}
 			
 	}
